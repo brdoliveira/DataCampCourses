@@ -2,7 +2,7 @@
 import pandas as pd
 import numpy as np
 
-brics = pd.read_csv("./02_Dictionaries&Pandas/data/brics.csv")
+brics = pd.read_csv("./02_Dictionaries&Pandas/data/brics.csv",index_col=0)
 # print(brics)
 
 is_huge = brics["area"] > 8 # condition in DataFrame 
