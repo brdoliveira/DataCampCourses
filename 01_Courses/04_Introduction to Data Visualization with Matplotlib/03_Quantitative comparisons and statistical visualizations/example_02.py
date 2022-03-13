@@ -1,4 +1,4 @@
-import matplotlib.py as plt
+import matplotlib.pyplot as plt
 import pandas as pd
 
 mens_rowing = pd.read_csv("./data/mens_rowing",index_col=0)
