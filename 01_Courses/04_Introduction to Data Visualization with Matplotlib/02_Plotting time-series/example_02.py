@@ -1,5 +1,3 @@
-from pydoc import cli
-from turtle import color
 import matplotlib.pyplot as plt
 import pandas as pd
 
