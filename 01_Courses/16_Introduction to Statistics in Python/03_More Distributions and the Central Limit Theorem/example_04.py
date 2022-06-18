@@ -29,7 +29,7 @@ from scipy.stats import expon
 # P(wait < 1 min)
 expon.cdf(1,scale=0.5)
 
-# P(wait < 1 min)
+# P(wait > 1 min)
 1 - expon.cdf(3,scale=0.3)
 
 # P(1 min < wait < 3 min)
