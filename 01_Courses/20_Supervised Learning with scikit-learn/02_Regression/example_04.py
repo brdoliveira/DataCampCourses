@@ -18,7 +18,7 @@
 # # Very high α: Can lead to underffiting
 """
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import Ridge, Lasso
+from sklearn.linear_model import Lasso
 import matplotlib.pyplot as plt
 import pandas as pd
 
@@ -36,10 +36,10 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3,
 
 scores = []
 for alpha in [0.1, 1.0, 10.0, 100.0, 1000.0]:
-    ridge = Ridge(alpha=alpha)
-    ridge.fit(X_train, y_train)
-    y_pred = ridge.predict(X_test)
-    scores.append(ridge.score(X_test, y_test))
+    lasso = Lasso(alpha=alpha)
+    lasso.fit(X_train, y_train)
+    y_pred = lasso.predict(X_test)
+    scores.append(lasso.score(X_test, y_test))
 print(scores)
 
 # Lasso regression for feature selection
